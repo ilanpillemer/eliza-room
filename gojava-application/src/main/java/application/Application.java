@@ -268,7 +268,7 @@ public class Application implements ServletContextListener {
 
             String exitDirection = null;
             if (lowerContent.length() > 4) {
-                exitDirection = lowerContent. //  string(4).toLowerCase();
+                exitDirection = lowerContent.substring(4).toLowerCase();
             }
 
             if ( exitDirection == null || !directions.contains(exitDirection) ) {
