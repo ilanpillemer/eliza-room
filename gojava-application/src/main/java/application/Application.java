@@ -264,19 +264,11 @@ public class Application implements ServletContextListener {
             return;
         }
 
-	//  String examine = "/examine ";
-        // if(lowerContent.startsWith(examine)) {
-        //     String item = lowerContent.substring(examine.length());
-	//     EventBuilder.playerEvent(Collections.singletonList(session), userid, "Everyone keep calm, nobody move.", null);
-        //     //System.out.println("Sending content back to player");
-        //     return;
-        // }
-
         if (lowerContent.startsWith("/go")) {
 
             String exitDirection = null;
             if (lowerContent.length() > 4) {
-                exitDirection = lowerContent.substring(4).toLowerCase();
+                exitDirection = lowerContent. //  string(4).toLowerCase();
             }
 
             if ( exitDirection == null || !directions.contains(exitDirection) ) {
